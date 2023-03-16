@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <style>
+        .fundo{
+            background-image: linear-gradient(rebeccapurple, black);
+            height: 100vh; /* vh - View Height */
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        }
+
+        #painel{
+            background-color:black;
+            width: 247px;
+            height: 30px;
+            margin: 7px;
+            color:antiquewhite;
+            font-size: 25px;
+            text-align: right;
+        }
+
+        #calculadora {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        .botao{
+            width: 60px;
+            height:60px;
+            font-size: 25px;
+            color:white;
+            background-color: black;
+            border: none;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="fundo">
+        <h1 style = "color: aliceblue; font-size: 22px;">Calculadora</h1>
+
+        <div id="calculadora">
+            <p id="painel"> 0 </p> <!--resultados-->
+            <table>
+                <tr>
+                    <td> <button class = "botao">C</button> </td>
+                    <td> <button class = "botao">/</button> </td>
+                    <td> <button class = "botao">*</button> </td>
+                    <td> <button class = "botao">↤</button> </td>
+                </tr>
+
+                <tr>
+                    <td> <button class = "botao">7</button> </td>
+                    <td> <button class = "botao">8</button> </td>
+                    <td> <button class = "botao">9</button> </td>
+                    <td> <button class = "botao">+</button> </td>
+                </tr>
+
+                <tr>
+                    <td> <button class = "botao">4</button> </td>
+                    <td> <button class = "botao">5</button> </td>
+                    <td> <button class = "botao">6</button> </td>
+                    <td> <button class = "botao">-</button> </td>
+                </tr>
+
+                <tr>
+                    <td> <button class = "botao">1</button> </td>
+                    <td> <button class = "botao">2</button> </td>
+                    <td> <button class = "botao">3</button> </td>
+                    <td rowspan="2"> <button style="height: 124px;"  class = "botao">=</button> </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"> <button style="width: 124px;"  class = "botao">0</button> </td>
+                    <td> <button class = "botao">,</button> </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+
+        //funcionamento da calculadora aqui
+
+    </script>
+</body>
+</html>
